@@ -10,6 +10,7 @@
       "
     >
       <TheHeader />
+      <TheHero />
     </section>
   </NuxtLayout>
 </template>
