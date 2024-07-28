@@ -26,6 +26,7 @@
         <TheServices />
         <TheCustomers />
       </section>
+      <TheWorks />
     </main>
   </NuxtLayout>
 </template>
