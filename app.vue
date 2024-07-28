@@ -24,6 +24,7 @@
         "
       >
         <TheServices />
+        <TheCustomers />
       </section>
     </main>
   </NuxtLayout>
