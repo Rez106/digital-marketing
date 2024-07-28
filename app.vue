@@ -12,5 +12,8 @@
       <TheHeader />
       <TheHero />
     </section>
+    <main>
+      <TheCertification />
+    </main>
   </NuxtLayout>
 </template>
