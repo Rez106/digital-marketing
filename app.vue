@@ -14,6 +14,17 @@
     </section>
     <main>
       <TheCertification />
+      <section
+        class="w-full"
+        style="
+          background: url('images/main-background.png');
+          background-position: right;
+          background-repeat: no-repeat;
+          background-size: contain;
+        "
+      >
+        <TheServices />
+      </section>
     </main>
   </NuxtLayout>
 </template>
