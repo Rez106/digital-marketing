@@ -8,9 +8,9 @@ export default {
         "secondary-gray": "#C9C9C9",
         "main-black": "#0D0D0D",
       },
-    },
-    screens: {
-      small: "350px",
+      screens: {
+        small: "350px",
+      },
     },
   },
   plugins: [],
