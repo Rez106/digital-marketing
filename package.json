@@ -21,6 +21,7 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.67"
+    "@iconify-json/mdi": "^1.1.67",
+    "@nuxtjs/device": "^3.1.1"
   }
 }
