@@ -9,6 +9,9 @@ export default {
         "main-black": "#0D0D0D",
       },
     },
+    screens: {
+      small: "350px",
+    },
   },
   plugins: [],
 };
