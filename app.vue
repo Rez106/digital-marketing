@@ -27,6 +27,7 @@
         <TheCustomers />
       </section>
       <TheWorks />
+      <TheComments />
     </main>
   </NuxtLayout>
 </template>
