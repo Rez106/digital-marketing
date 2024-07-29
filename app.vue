@@ -29,5 +29,6 @@
       <TheWorks />
       <TheComments />
     </main>
+    <TheFooter />
   </NuxtLayout>
 </template>
