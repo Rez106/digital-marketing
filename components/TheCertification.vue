@@ -14,7 +14,7 @@
           v-for="(item, index) in companies"
           :key="index"
         >
-          <NuxtImg :src="item" class="w-full" />
+          <NuxtImg :src="item" class="w-8/12" />
         </div>
       </div>
     </NuxtLayout>
@@ -22,13 +22,13 @@
 </template>
 
 <script setup>
-  import asus from "/images/featured/asus-logo.svg";
-  import allianz from "/images/featured/allianz-1.svg";
-  import chase from "/images/featured/chase.svg";
-  import nyt from "/images/featured/new-york-times.svg";
-  import linkedin from "/images/featured/linkedin.svg";
-
-  const companies = [asus, allianz, chase, nyt, linkedin];
+  const companies = [
+    "/images/featured/asus-logo.svg",
+    "/images/featured/allianz-1.svg",
+    "/images/featured/chase.svg",
+    "/images/featured/new-york-times.svg",
+    "/images/featured/linkedin.svg",
+  ];
 </script>
 
 <style lang="scss" scoped></style>

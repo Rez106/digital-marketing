@@ -23,43 +23,36 @@
 </template>
 
 <script setup>
-  import seo from "/images/icons/seo.svg";
-  import develop from "/images/icons/develop.svg";
-  import video from "/images/icons/video.svg";
-  import content from "/images/icons/content.svg";
-  import social from "/images/icons/social.svg";
-  import click from "/images/icons/click.svg";
-
   const cards = [
     {
       id: 1,
       name: "بهینه‌سازی موتور جستجو",
-      icon: seo,
+      icon: "/images/icons/seo.svg",
     },
     {
       id: 2,
       name: "طراحی و توسعه وب‌سایت",
-      icon: develop,
+      icon: "/images/icons/develop.svg",
     },
     {
       id: 3,
       name: "ادیت ویدیو و تولید",
-      icon: video,
+      icon: "/images/icons/video.svg",
     },
     {
       id: 4,
       name: "نوشتن محتوا",
-      icon: content,
+      icon: "/images/icons/content.svg",
     },
     {
       id: 5,
       name: "فروش در شبکه‌های اجتماعی",
-      icon: social,
+      icon: "/images/icons/social.svg",
     },
     {
       id: 6,
       name: "پرداخت برای هر کلیک",
-      icon: click,
+      icon: "/images/icons/click.svg",
     },
   ];
 </script>
