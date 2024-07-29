@@ -1,23 +1,40 @@
 <template>
   <section class="w-full py-5 mt-16">
     <NuxtLayout name="container">
-      <div class="w-full flex items-center justify-between gap-5 h-48">
-        <ServicesCard v-for="card in cards.slice(0, 2)" :key="card.id" :card />
-        <div class="flex flex-col gap-5 items-start mr-10 text-secondary-gray">
-          <h1 class="flex flex-col items-start text-3xl font-bold">
-            <span>تخصص</span>
-            <span>دیجیتال مارکتینگ ما</span>
-          </h1>
-          <p class="text-sm">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز.
-          </p>
+      <section class="flex items-center justify-between mt-10">
+        <div class="flex-1">
+          <div class="flex flex-col gap-5 items-start text-secondary-gray">
+            <h1 class="flex flex-col items-start text-4xl font-extrabold">
+              <span>تخصص</span>
+              <span>دیجیتال مارکتینگ ما</span>
+            </h1>
+            <p class="text-base">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="w-full flex items-start h-48 justify-between gap-5 mt-10">
-        <ServicesCard v-for="card in cards.slice(2, 6)" :key="card.id" :card />
-      </div>
+        <div class="flex-1 max-w-[50%]">
+          <Swiper
+            :modules="[SwiperAutoplay, SwiperEffectCards]"
+            effect="cards"
+            :centered-slides="true"
+            :grab-cursor="true"
+            :loop="true"
+            :autoplay="{
+              pauseOnMouseEnter: true,
+              waitForTransition: true,
+            }"
+            class="max-w-[300px] h-[300px]"
+          >
+            <SwiperSlide v-for="card in cards" :key="card.id">
+              <ServicesCard :card />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
     </NuxtLayout>
   </section>
 </template>
