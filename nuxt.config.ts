@@ -15,4 +15,11 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", href: "logo.svg", type: "image/svg+xml" }],
     },
   },
+  swiper: {
+    styleLang: "css",
+    modules: ["autoplay", "effect-cards", "pagination", "navigation"],
+  },
+  tailwindcss: {
+    cssPath: "./assets/css/main.css",
+  },
 });
