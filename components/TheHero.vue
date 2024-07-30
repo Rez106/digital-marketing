@@ -1,12 +1,14 @@
 <template>
-  <section class="w-full mt-10 pt-20">
-    <NuxtLayout name="container" class="flex items-center">
+  <section class="w-full sm:mt-10 pt-20">
+    <NuxtLayout name="container" class="flex items-center max-sm:flex-col">
       <HeroDetails />
-      <HeroImage />
+      <HeroImage v-if="smAndLarger" />
     </NuxtLayout>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+  const { smAndLarger } = useDisplay();
+</script>
 
 <style lang="scss" scoped></style>

@@ -1,13 +1,13 @@
 <template>
   <section class="flex-1 flex items-center justify-center">
-    <div class="relative">
+    <div class="relative flex items-center justify-center">
       <div class="semi-circle"></div>
       <div class="box"></div>
       <NuxtImg
         src="/images/hero-person.png"
         height="650"
         style="position: relative; z-index: 99"
-        class="brightness-75 drop-shadow-lg"
+        class="brightness-75 drop-shadow-lg max-md:w-2/3"
       />
     </div>
   </section>
