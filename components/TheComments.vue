@@ -2,27 +2,35 @@
   <section class="w-full mt-10 bg-[#181818] py-10">
     <NuxtLayout name="container">
       <h1 class="text-3xl font-bold pb-10 text-secondary-gray">توصیفات</h1>
-      <ClientOnly>
-        <Swiper
-          :modules="[SwiperPagination]"
-          :pagination="{
-            clickable: true,
-            el: '.swiper-pagination',
-            renderBullet: render,
-          }"
-          :slides-per-view="3"
-          :space-between="10"
+      <Swiper
+        :modules="[SwiperPagination]"
+        :pagination="{
+          clickable: true,
+          el: '.swiper-pagination',
+          renderBullet: render,
+        }"
+        :breakpoints="{
+          1000: {
+            slidesPerView: 3,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          300: {
+            slidesPerView: 1,
+          },
+        }"
+        :space-between="10"
+      >
+        <SwiperSlide
+          v-for="item in comments"
+          :key="item.id"
+          class="h-auto w-auto p-5 mb-10"
         >
-          <SwiperSlide
-            v-for="item in comments"
-            :key="item.id"
-            class="h-auto w-auto p-5 mb-10"
-          >
-            <TestimonialComment :comment="item" />
-          </SwiperSlide>
-          <div class="swiper-pagination !w-fit !right-4"></div>
-        </Swiper>
-      </ClientOnly>
+          <TestimonialComment :comment="item" />
+        </SwiperSlide>
+        <div class="swiper-pagination !w-fit !right-4"></div>
+      </Swiper>
     </NuxtLayout>
   </section>
 </template>
