@@ -1,12 +1,12 @@
 <template>
-  <section class="flex-1 flex flex-col items-start gap-10">
+  <section class="flex-1 flex flex-col items-start gap-10 max-sm:items-center">
     <h1
-      class="text-secondary-gray text-5xl flex flex-col items-start gap-3 font-extrabold"
+      class="text-secondary-gray text-5xl max-sm:text-4xl flex flex-col items-start gap-3 font-extrabold"
     >
       <span>آژانس دیجیتال </span>
       <span>مارکتینگ خلاق</span>
     </h1>
-    <p class="leading-7 text-secondary-gray">
+    <p class="leading-7 text-secondary-gray max-sm:text-center max-sm:text-sm">
       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
       طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
       که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با

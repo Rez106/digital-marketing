@@ -8,7 +8,7 @@
         src="/images/footer-person.png"
         height="650"
         style="position: relative; z-index: 99"
-        class="brightness-75 drop-shadow-lg"
+        class="brightness-75 drop-shadow-lg max-sm:w-2/3 max-sm:mx-auto"
       />
     </div>
   </section>
