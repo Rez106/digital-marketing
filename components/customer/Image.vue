@@ -2,10 +2,10 @@
   <div class="flex-1 flex items-center justify-center">
     <div class="relative">
       <div
-        class="absolute bottom-0 rounded-[50px] w-full h-4/6 bg-amber-800 bg-opacity-20"
+        class="absolute bottom-0 rounded-[50px] w-full max-md:w-9/12 h-4/6 bg-amber-800 bg-opacity-20"
       ></div>
       <div
-        class="absolute w-fit rounded-lg top-20 -left-16 p-2 flex flex-col gap-3"
+        class="absolute w-fit rounded-lg top-20 -left-16 p-2 flex flex-col gap-3 max-md:top-0 max-md:left-5"
       >
         <h1 class="text-xs font-light text-white mb-2">مشتری‌های ما</h1>
         <div class="w-full flex items-center">
@@ -31,10 +31,10 @@
       <NuxtImg
         src="/images/customer-person.png"
         height="550"
-        class="-scale-x-[1] drop-shadow-md"
+        class="-scale-x-[1] drop-shadow-md max-md:w-2/3 mx-auto"
       />
       <div
-        class="w-8/12 absolute bottom-1/4 -right-5 shadow-lg bg-white px-2 py-3 rounded-xl"
+        class="w-8/12 absolute bottom-1/4 -right-5 shadow-xl bg-white px-2 py-3 rounded-xl max-md:bottom-5 max-md:right-4 max-md:shadow-zinc-800"
       >
         <div class="flex items-center justify-between text-sm font-semibold">
           <h1>درآمد</h1>
