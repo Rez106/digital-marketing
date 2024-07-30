@@ -10,7 +10,6 @@
       </div>
       <div class="w-full">
         <Swiper
-          v-if="xlAndSmaller"
           :modules="[SwiperNavigation]"
           :space-between="10"
           :navigation="{
@@ -31,11 +30,11 @@
             600: {
               slidesPerView: 2,
             },
-            400: {
+            300: {
               slidesPerView: 1,
             },
           }"
-          class="mt-5 !px-10 !h-24 max-sm:!w-10/12 max-sm:mx-auto !w-full"
+          class="mt-5 !px-10 !h-24 max-sm:!w-10/12 max-sm:mx-auto xl:!hidden"
         >
           <SwiperSlide v-for="(item, index) in companies" :key="index">
             <div
@@ -55,7 +54,7 @@
             <Icon name="mdi:chevron-right" size="x-large" />
           </button>
         </Swiper>
-        <div v-else class="w-full flex items-center gap-5 h-24 mt-10">
+        <div class="w-full flex items-center gap-5 h-24 mt-10 max-xl:hidden">
           <div
             v-for="(item, index) in companies"
             :key="index"
@@ -70,8 +69,6 @@
 </template>
 
 <script setup>
-  const { xlAndLarger, xlAndSmaller } = useDisplay();
-
   const companies = [
     "/images/featured/asus-logo.svg",
     "/images/featured/allianz-1.svg",
