@@ -4,8 +4,42 @@
       <h1 class="text-secondary-gray text-3xl font-bold">
         پروژه‌های اخیر مجموعه
       </h1>
-      <div class="flex items-center gap-10">
-        <WorksWork v-for="work in works" :key="work.id" :work />
+      <div class="w-full">
+        <Swiper
+          :modules="[SwiperNavigation]"
+          :space-between="20"
+          :navigation="{
+            enabled: true,
+            nextEl: '.custom-next-button',
+            prevEl: '.custom-prev-button',
+          }"
+          :breakpoints="{
+            1200: {
+              slidesPerView: works.length,
+            },
+            650: {
+              slidesPerView: 2,
+            },
+            400: {
+              slidesPerView: 1,
+            },
+          }"
+          class="!px-10 !mx-auto"
+        >
+          <SwiperSlide v-for="work in works" :key="work.id">
+            <WorksWork :work />
+          </SwiperSlide>
+          <button
+            class="disabled:hidden custom-next-button bg-gradient-to-r from-main-black to-transparent h-full text-secondary-gray absolute top-1/2 -translate-y-1/2 left-0 z-50 p-2 cursor-pointer"
+          >
+            <Icon name="mdi:chevron-left" size="x-large" />
+          </button>
+          <button
+            class="disabled:hidden custom-prev-button text-secondary-gray bg-gradient-to-l from-main-black to-transparent h-full absolute top-1/2 -translate-y-1/2 right-0 z-50 cursor-pointerdisabled:hidden"
+          >
+            <Icon name="mdi:chevron-right" size="x-large" />
+          </button>
+        </Swiper>
       </div>
     </NuxtLayout>
   </section>
