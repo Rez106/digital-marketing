@@ -1,6 +1,6 @@
 <template>
   <div class="w-fit">
-    <NuxtImg src="logo.svg" :width :height />
+    <NuxtImg src="/logo.svg" :width :height />
   </div>
 </template>
 
