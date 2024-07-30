@@ -3,7 +3,7 @@
     class="w-full bg-[#222222] px-5 py-7 rounded-xl shadow-xl cursor-pointer"
   >
     <div class="w-full flex items-center gap-5">
-      <div class="w-1/5 max-sm:w-1/12">
+      <div class="w-1/5 max-sm:w-1/12 max-small:w-2/12">
         <NuxtImg :src="comment.avatar" class="w-full rounded-full" />
       </div>
       <div class="flex-1">
