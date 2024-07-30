@@ -1,10 +1,14 @@
 <template>
-  <section class="w-full py-5 mt-16">
+  <section class="w-full py-5 mt-16 max-sm:mt-0">
     <NuxtLayout name="container">
-      <section class="flex items-center justify-between mt-10">
-        <div class="flex-1">
+      <section
+        class="w-full flex items-center justify-between mt-10 overflow-hidden max-sm:flex-col max-sm:gap-8"
+      >
+        <div class="flex-1 max-w-[50%] max-sm:max-w-full max-sm:text-center">
           <div class="flex flex-col gap-5 items-start text-secondary-gray">
-            <h1 class="flex flex-col items-start text-4xl font-extrabold">
+            <h1
+              class="w-full flex flex-col items-start text-4xl font-extrabold max-sm:items-center max-sm:justify-center"
+            >
               <span>تخصص</span>
               <span>دیجیتال مارکتینگ ما</span>
             </h1>
@@ -16,7 +20,9 @@
             </p>
           </div>
         </div>
-        <div class="flex-1 max-w-[50%]">
+        <div
+          class="flex-1 max-w-[50%] max-md:max-w-[40%] max-md:mx-auto max-sm:max-w-[80%]"
+        >
           <Swiper
             :modules="[SwiperAutoplay, SwiperEffectCards]"
             effect="cards"
@@ -27,7 +33,7 @@
               pauseOnMouseEnter: true,
               waitForTransition: true,
             }"
-            class="max-w-[300px] h-[300px]"
+            class="max-w-[300px] h-[300px] xl:!max-w-[500px]"
           >
             <SwiperSlide v-for="card in cards" :key="card.id">
               <ServicesCard :card />
