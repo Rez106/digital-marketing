@@ -1,5 +1,5 @@
 <template>
-  <aside
+  <div
     class="fixed max-sm:w-full w-1/3 top-0 bg-gradient-to-tr from-main-black to-zinc-900 h-dvh z-[9999] duration-300 flex flex-col p-5 shadow-lg"
     :class="{ 'right-0 opacity-100': isOpen, '-right-full opacity-0': !isOpen }"
   >
@@ -18,7 +18,7 @@
         {{ item.name }}
       </div>
     </nav>
-  </aside>
+  </div>
 </template>
 
 <script setup>
