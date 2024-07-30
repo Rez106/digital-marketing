@@ -7,7 +7,6 @@
         :pagination="{
           clickable: true,
           el: '.swiper-pagination',
-          renderBullet: render,
         }"
         :breakpoints="{
           1000: {
@@ -82,17 +81,18 @@
   ];
 
   function render(index, className) {
-    return (
-      '<span class="' + className + ' custom-bullet">' + (index + 1) + "</span>"
-    );
+    return '<span class="' + className + ' custom-bullet"></span>';
   }
 </script>
 
 <style>
   .swiper-pagination-bullet {
-    @apply w-5 h-1 rounded-md bg-white;
+    width: 1.25rem;
+    height: 0.25rem;
+    border-radius: 0.375rem;
+    background-color: #c9c9c9;
   }
   .swiper-pagination-bullet-active {
-    @apply bg-secondary-gray;
+    background-color: white;
   }
 </style>
