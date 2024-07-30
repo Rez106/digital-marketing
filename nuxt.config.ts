@@ -8,15 +8,11 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/image",
     "nuxt-swiper",
-    "@nuxtjs/device",
   ],
   css: ["@/assets/css/main.css"],
   app: {
     head: {
       link: [{ rel: "icon", href: "logo.svg", type: "image/svg+xml" }],
     },
-  },
-  device: {
-    refreshOnResize: true,
   },
 });
