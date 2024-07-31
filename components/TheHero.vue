@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full sm:mt-10 pt-20">
+  <section class="w-full py-24">
     <NuxtLayout name="container" class="flex items-center max-sm:flex-col">
       <HeroDetails />
       <HeroImage class="max-sm:hidden" />
